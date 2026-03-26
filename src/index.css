@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "inter", sans-serif;
+}
+.dark {
+  color-scheme: dark;
+}
+html {
+  scroll-behavior: smooth;
+}
