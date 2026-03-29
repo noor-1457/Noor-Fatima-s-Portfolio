@@ -81,11 +81,13 @@ const Hero = ({ DarkMode }) => {
               data-aos="fade-up"
               data-aos-delay="600"
             >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo,
-              autem amet dolorem impedit tempora ducimus ratione ut molestias
-              omnis unde, recusandae asperiores, consequatur dignissimos
-              voluptate accusantium eius facere. Maiores necessitatibus vero
-              harum saepe, magni consectetur.
+              A passionate Frontend Web Developer who loves turning ideas into
+              interactive, user-friendly websites. I specialize in crafting
+              clean, responsive designs using HTML, CSS, JavaScript, and modern
+              frameworks. My goal is to create digital experiences that are not
+              only functional but also visually appealing. When I’m not coding,
+              you’ll find me exploring new design trends and learning the latest
+              web technologies.
             </p>
             {/* buttons */}
             <div className="w-full pt-4 sm:pt-6">

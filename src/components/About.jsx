@@ -18,9 +18,8 @@ function About({ DarkMode }) {
           className="flex flex-wrap justify-center gap-4 relative 
             order-2 lg:order-1"
         >
-          {/* ❌ w-75 → ✅ w-72 (valid Tailwind) */}
+          {/* star shape */}
           <div className="relative w-72 h-72 lg:w-96 lg:h-96">
-            {/* ✅ SAME star-shape, only gradient syntax fixed */}
             <div
               className="absolute -inset-4 lg:-inset-20 
             bg-gradient-to-l from-[#f97316] via-[#fb923c] to-[#f59e0b] 
@@ -28,7 +27,7 @@ function About({ DarkMode }) {
               data-aos="zoom-in"
               data-aos-delay="600"
             ></div>
-
+            {/* image */}
             <img
               src={about}
               alt="About Image"
@@ -39,7 +38,7 @@ function About({ DarkMode }) {
             />
           </div>
         </figure>
-
+        {/* Article */}
         <article
           data-aos="fade-left"
           data-aos-delay="300"
@@ -65,12 +64,13 @@ function About({ DarkMode }) {
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis distinctio debitis repellendus quod impedit alias
-            repellat, cumque libero iusto sint ducimus dolore voluptatum
-            similique expedita hic, corrupti mollitia, reprehenderit quibusdam.
-            Sint totam eligendi id provident at, debitis laudantium perspiciatis
-            quaerat.
+            A passionate Frontend Web Developer who loves turning ideas into
+            interactive, user-friendly websites. I specialize in crafting clean,
+            responsive designs using HTML, CSS, JavaScript, and modern
+            frameworks. My goal is to create digital experiences that are not
+            only functional but also visually appealing. When I’m not coding,
+            you’ll find me exploring new design trends and learning the latest
+            web technologies.
           </p>
           <div
             className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 mb-6
@@ -111,6 +111,7 @@ function About({ DarkMode }) {
                 Years Experience
               </div>
             </div>
+            {/* projects */}
             <div
               className="text-center"
               data-aos="zoom-in"
