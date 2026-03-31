@@ -14,65 +14,73 @@ function Projects({ DarkMode }) {
       id: 1,
       title: "NeuroCelix",
       description:
-        "Neurocelix is a web application I built with my team during my internship, focused on delivering a smooth, user-friendly experience with modern design and functionality.",
+        "Neurocelix is a web application I developed with my team during my internship, designed to provide a seamless, user-friendly experience with modern design and robust functionality.",
       image: neuro,
       tags: ["React", "JavaScript", "CSS", "HTML", "Tailwind"],
+      github: "https://github.com/noor-1457/Neurocelix-AI",
     },
     {
       id: 2,
       title: "Ripple News App",
       description:
-        "I built this news app to deliver the latest updates in a clean and easy-to-use interface. 📰✨",
+        "I developed this news application to provide users with the latest updates through a clean, responsive, and user-friendly interface. It ensures a smooth browsing experience while keeping users informed in real time.",
       image: news,
       tags: ["React", "JavaScript", "CSS", "HTML", "News API", "Bootstrap"],
+      github: "https://github.com/noor-1457/Ripple-News",
     },
     {
       id: 3,
       title: "The Bakery",
       description:
-        "I created this bakery website to showcase delicious baked items with a modern, user-friendly design. 🎂✨",
+        "I designed and developed this bakery website with a modern, user-friendly interface to showcase delicious baked products in an engaging way.",
       image: bakery,
       tags: ["JavaScript", "CSS", "HTML"],
+      github: "https://github.com/noor-1457/Online-Bakery-",
     },
     {
       id: 4,
       title: "Currency Converter",
       description:
-        "I built this currency converter to provide real-time exchange rates in a simple and intuitive interface. 💱✨",
+        "I developed a currency converter that delivers real-time exchange rates through a clean, intuitive, and user-friendly interface.",
       image: currency,
       tags: ["JavaScript", "CSS", "HTML", "Currency API"],
+      github: "https://github.com/noor-1457/currency-exchanger",
     },
     {
       id: 5,
       title: "To-Do App",
       description:
-        "I built this to-do app to help users organize their tasks in a simple and efficient way. ✨",
+        "I developed a to-do app that helps users manage and organize their tasks efficiently through a clean and intuitive interface.",
       image: todo,
       tags: ["JavaScript", "CSS", "HTML"],
+      github: "https://github.com/noor-1457/To-do-List",
     },
     {
       id: 6,
       title: "Recipe Generator",
       description:
-        "I built this recipe generator to help users discover new dishes and share their favorite recipes. 🍽️✨",
+        "I developed a recipe generator that allows users to discover new dishes and share their favorite recipes through an engaging and user-friendly interface.",
       image: recipe,
       tags: ["JavaScript", "CSS", "HTML", "Recipe API"],
+      github: "https://github.com/noor-1457/Recipe-Generator",
     },
     {
       id: 7,
-      title: "Weather-App",
+      title: "Weather",
       description:
-        "I built this weather app to provide real-time forecasts in a simple and intuitive interface. 🌤️✨",
+        "I developed a weather app that delivers real-time forecasts through a clean, intuitive, and user-friendly interface, making it easy for users to stay prepared.",
       image: weather,
       tags: ["JavaScript", "CSS", "HTML", "Weather API"],
+      github: "https://github.com/noor-1457/Weather-app",
     },
     {
       id: 8,
-      title: "TextifyReact-App",
+      title: "Textify",
       description:
-        "I built this textify app to help users create and manage their notes in a simple and efficient way. ✍️✨",
+        "I developed Textify, an app that enables users to create, organize, and manage their notes efficiently through a clean and intuitive interface.",
       image: textify,
       tags: ["React", "JavaScript", "CSS", "HTML", "Bootstrap"],
+      github: "https://github.com/noor-1457/Textify",
     },
   ];
 
@@ -172,7 +180,7 @@ function Projects({ DarkMode }) {
                 </div>
                 <div className="flex gap-2">
                   <a
-                    href="#"
+                    href={project.github}
                     style={{
                       background: DarkMode ? "#374151" : "#f3f4f6",
                       color: DarkMode ? "#white" : "#374151",
@@ -181,6 +189,7 @@ function Projects({ DarkMode }) {
                     gap-1.5 px-3 py-2 text-sm rounded-lg hover:opacity-90
                     transition-colors"
                     data-aos="zoom-in"
+                    target="_blank"
                     data-aos-delay="300"
                   >
                     <FaGithub className="text-sm" />
@@ -209,7 +218,8 @@ function Projects({ DarkMode }) {
         </div>
         <div className="text-center mt-10 ">
           <a
-            href="#"
+            href="https://github.com/noor-1457"
+            target="_blank"
             style={{
               background: "linear-gradient(to right, #f97316, #f59e0b)",
             }}
@@ -222,6 +232,20 @@ function Projects({ DarkMode }) {
           >
             <FaGithub />
             <span>View All Projects</span>
+          </a>
+
+          <a
+            href="#"
+            style={{
+              background: "linear-gradient(to right, #f97316, #f59e0b)",
+            }}
+            className="inline-flex flex items-center font-semibold
+                    gap-2 px-2 py-4 text-sm rounded-full hover:shadow-lg
+                    hover:shadow-orange-500/25 ml-2 
+                    transition-all text-white"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
             <FaExternalLinkAlt className="text-sm" />
             <span>Demo</span>
           </a>

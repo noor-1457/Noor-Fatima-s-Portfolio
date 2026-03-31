@@ -1,4 +1,4 @@
-import contact from "../assets/contact_us.png";
+import contact from "../assets/contact-us.png";
 
 function Contact({ DarkMode }) {
   return (

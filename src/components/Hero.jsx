@@ -9,10 +9,22 @@ import hero from "../assets/hero.png";
 
 const Hero = ({ DarkMode }) => {
   const socialIcons = [
-    { icon: instagram, alt: "instagram" },
-    { icon: facebook, alt: "facebook" },
-    { icon: linkedin, alt: "linkedin" },
-    { icon: github, alt: "github" },
+    {
+      icon: instagram,
+      alt: "instagram",
+      link: "https://www.instagram.com/noori_1119/?__pwa=1",
+    },
+    {
+      icon: facebook,
+      alt: "facebook",
+      link: "https://www.facebook.com/profile.php?id=61581190679650",
+    },
+    {
+      icon: linkedin,
+      alt: "linkedin",
+      link: "https://www.linkedin.com/in/noor-fatima-zafar-63a609318/",
+    },
+    { icon: github, alt: "github", href: "https://github.com/noor-1457" },
   ];
 
   const DarkTheme = {
@@ -81,13 +93,10 @@ const Hero = ({ DarkMode }) => {
               data-aos="fade-up"
               data-aos-delay="600"
             >
-              A passionate Frontend Web Developer who loves turning ideas into
-              interactive, user-friendly websites. I specialize in crafting
-              clean, responsive designs using HTML, CSS, JavaScript, and modern
-              frameworks. My goal is to create digital experiences that are not
-              only functional but also visually appealing. When I’m not coding,
-              you’ll find me exploring new design trends and learning the latest
-              web technologies.
+              Frontend Web Developer turning ideas into clean, interactive, and
+              user-friendly websites. I craft responsive designs with HTML, CSS,
+              JavaScript, and modern frameworks like React. Let's build
+              something amazing together!
             </p>
             {/* buttons */}
             <div className="w-full pt-4 sm:pt-6">

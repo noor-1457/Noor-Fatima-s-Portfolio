@@ -1,18 +1,19 @@
 // import { section } from "framer-motion/client";s
 import React from "react";
+import framer from "../assets/framer-motion.svg";
 
 const Skills = ({ DarkMode }) => {
   const skills = [
     {
       name: "HTML",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-      level: 90,
+      level: 99,
       color: "from-orange-500 to-amber-500",
     },
     {
       name: "CSS",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-      level: 85,
+      level: 97,
       color: "from-blue-500 to-sky-500",
     },
     {
@@ -27,58 +28,58 @@ const Skills = ({ DarkMode }) => {
       level: 75,
       color: "from-cyan-500 to-blue-500",
     },
-    {
-      name: "Node.js",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-      level: 70,
-      color: "from-green-500 to-emerald-500",
-    },
-    {
-      name: "Express",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-      level: 65,
-      color: "from-green-500 to-green-700",
-    },
-    {
-      name: "MongoDB",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-      level: 60,
-      color: "from-green-500 to-green-700",
-    },
+    // {
+    //   name: "Node.js",
+    //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    //   level: 70,
+    //   color: "from-green-500 to-emerald-500",
+    // },
+    // {
+    //   name: "Express",
+    //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    //   level: 65,
+    //   color: "from-green-500 to-green-700",
+    // },
+    // {
+    //   name: "MongoDB",
+    //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    //   level: 60,
+    //   color: "from-green-500 to-green-700",
+    // },
     {
       name: "Git",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-      level: 55,
+      level: 90,
       color: "from-red-500 to-red-700",
     },
     {
       name: "GitHub",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-      level: 50,
+      level: 95,
       color: "from-gray-500 to-gray-700",
     },
     {
       name: "Tailwind CSS",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
-      level: 45,
+      icon: "https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000",
+      level: 95,
       color: "from-teal-500 to-cyan-500",
     },
     {
       name: "Bootstrap",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg",
-      level: 40,
+      level: 95,
       color: "from-purple-500 to-pink-500",
     },
     {
       name: "Sass",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
-      level: 35,
+      level: 55,
       color: "from-pink-500 to-rose-500",
     },
     {
       name: "Framer Motion",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/framer/framer-original.svg",
-      level: 30,
+      icon: framer,
+      level: 70,
       color: "from-blue-500 to-indigo-500",
     },
   ];
@@ -112,8 +113,7 @@ const Skills = ({ DarkMode }) => {
               className="text-lg max-w-2xl mx-auto leading-relaxed "
               style={{ color: DarkMode ? "#d1d5db" : "#4b5563" }}
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Cupiditate hic iure excepturi.
+              Skills Behind My Projects.
             </p>
           </div>
 
