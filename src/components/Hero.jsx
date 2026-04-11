@@ -113,7 +113,7 @@ const Hero = ({ DarkMode }) => {
                 </a>
                 <a href="#contact" className="w-full sm:w-auto">
                   <button
-                    className={`w-full sm:w-auto inline-flex items-center ${theme.buttonSecondary}justify-center border-0 py-3 px-6 sm:px-8 pl-38  hover:shadow-[0_0_40px_rgba(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform`}
+                    className={`w-full sm:w-auto inline-flex items-center ${theme.buttonSecondary}justify-center border-0 py-3 px-6  pl-38  hover:shadow-[0_0_40px_rgba(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform`}
                   >
                     <Mail className="w-4 h-4 sm:h-5 sm:w-5 mr-2" />
                     Contact Me
