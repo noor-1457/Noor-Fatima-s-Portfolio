@@ -39,7 +39,7 @@ const Hero = ({ DarkMode }) => {
     textPrimary: "text-gray-900",
     textSecondary: "text-gray-700",
     buttonSecondary:
-      "text-gray-800 border-2 border-orange-500 hover:bg-orange-500 hover:text-gray-800",
+      "text-gray-800 border-2 border-orange-500 hover:bg-orange-600 hover:text-gray-800",
     decorativeCircle: "bg-orange-400 opacity-20",
   };
 
@@ -113,7 +113,7 @@ const Hero = ({ DarkMode }) => {
                 </a>
                 <a href="#contact" className="w-full sm:w-auto">
                   <button
-                    className={`w-full sm:w-auto inline-flex items-center ${theme.buttonSecondary}justify-center border-0 py-3 px-6  pl-38  hover:shadow-[0_0_40px_rgba(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform`}
+                    className={`w-full sm:w-auto inline-flex items-center justify-center text-white  border-0 py-3 px-8 hover:shadow-[0_0_40px_rgba(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform ${theme.buttonSecondary} `}
                   >
                     <Mail className="w-4 h-4 sm:h-5 sm:w-5 mr-2" />
                     Contact Me
