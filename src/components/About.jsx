@@ -130,14 +130,18 @@ function About({ DarkMode }) {
             </div>
           </div>
           {/* ✅ */}
-          <button
+
+          <a
+            href="https://www.linkedin.com/in/noor-fatima-zafar-63a609318/"
+            target="_blank"
+            rel="noopener noreferrer"
             className={`w-full sm:w-auto inline-flex items-center justify-center py-2 px-4 sm:px-6 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
-          rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform  border-2 border-orange-500 ${DarkMode ? "text-white bg-orange-500/10" : "text-gray-800 bg-white/90"}`}
-            data-aos="fade-up"
-            data-aos-delay="800"
+  rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform border-2 border-orange-500 ${
+    DarkMode ? "text-white bg-orange-500/10" : "text-gray-800 bg-gray700"
+  }`}
           >
             Learn More
-          </button>
+          </a>
         </article>
       </div>
     </section>

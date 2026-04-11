@@ -56,7 +56,7 @@ const Skills = ({ DarkMode }) => {
       name: "GitHub",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
       level: 95,
-      color: "from-gray-500 to-gray-700",
+      color: "from-gray-500 to-gray-300",
     },
     {
       name: "Tailwind CSS",
