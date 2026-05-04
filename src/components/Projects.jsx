@@ -5,6 +5,7 @@ import currency from "../assets/currencyConverter.png";
 import todo from "../assets/to-do.png";
 import recipe from "../assets/food-recipes.png";
 import weather from "../assets/weather.png";
+import chiccloset from "../assets/chiccloset.png";
 import textify from "../assets/textify.png";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
@@ -12,76 +13,94 @@ function Projects({ DarkMode }) {
   const projects = [
     {
       id: 1,
-      title: "NeuroCelix",
+      title: "ChicCloset",
       description:
-        "Neurocelix is a web application I developed with my team during my internship, designed to provide a seamless, user-friendly experience with modern design and robust functionality.",
-      image: neuro,
+        "ChicCloset is a fully functional e-commerce web application built for fashion retail. It offers a smooth and responsive shopping experience with product browsing, category filtering, and an intuitive UI designed to enhance customer engagement.",
+      image: chiccloset,
       tags: ["React", "JavaScript", "CSS", "HTML", "Tailwind"],
-      github: "https://github.com/noor-1457/Neurocelix-AI",
+      github: "https://github.com/noor-1457/ChicCloset",
+      demo: "https://chic-closet-tau.vercel.app/",
     },
     {
       id: 2,
-      title: "Ripple News App",
+      title: "NeuroCelix",
       description:
-        "I developed this news application to provide users with the latest updates through a clean, responsive, and user-friendly interface. It ensures a smooth browsing experience while keeping users informed in real time.",
-      image: news,
-      tags: ["React", "JavaScript", "CSS", "HTML", "News API", "Bootstrap"],
-      github: "https://github.com/noor-1457/Ripple-News",
+        "NeuroCelix is a technology service platform built during my internship that delivers modern digital solutions to customers. It focuses on providing reliable, scalable, and user-friendly tech services with a clean and intuitive interface.",
+      image: neuro,
+      tags: ["React", "JavaScript", "CSS", "HTML", "Tailwind"],
+      github: "https://github.com/noor-1457/Neurocelix-AI",
+      demo: "https://www.linkedin.com/posts/noor-fatima-zafar-63a609318_webdesign-uiux-itservices-activity-7454593941972213760-3bnV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFCJSE4BgQdc-0PJaoxwcQ7XQIp1ZflvboU",
     },
     {
       id: 3,
-      title: "The Bakery",
-      description:
-        "I designed and developed this bakery website with a modern, user-friendly interface to showcase delicious baked products in an engaging way.",
-      image: bakery,
-      tags: ["JavaScript", "CSS", "HTML"],
-      github: "https://github.com/noor-1457/Online-Bakery-",
-    },
-    {
-      id: 4,
-      title: "Currency Converter",
-      description:
-        "I developed a currency converter that delivers real-time exchange rates through a clean, intuitive, and user-friendly interface.",
-      image: currency,
-      tags: ["JavaScript", "CSS", "HTML", "Currency API"],
-      github: "https://github.com/noor-1457/currency-exchanger",
-    },
-    {
-      id: 5,
-      title: "To-Do App",
-      description:
-        "I developed a to-do app that helps users manage and organize their tasks efficiently through a clean and intuitive interface.",
-      image: todo,
-      tags: ["JavaScript", "CSS", "HTML"],
-      github: "https://github.com/noor-1457/To-do-List",
-    },
-    {
-      id: 6,
-      title: "Recipe Generator",
-      description:
-        "I developed a recipe generator that allows users to discover new dishes and share their favorite recipes through an engaging and user-friendly interface.",
-      image: recipe,
-      tags: ["JavaScript", "CSS", "HTML", "Recipe API"],
-      github: "https://github.com/noor-1457/Recipe-Generator",
-    },
-    {
-      id: 7,
-      title: "Weather",
-      description:
-        "I developed a weather app that delivers real-time forecasts through a clean, intuitive, and user-friendly interface, making it easy for users to stay prepared.",
-      image: weather,
-      tags: ["JavaScript", "CSS", "HTML", "Weather API"],
-      github: "https://github.com/noor-1457/Weather-app",
-    },
-    {
-      id: 8,
       title: "Textify",
       description:
         "I developed Textify, an app that enables users to create, organize, and manage their notes efficiently through a clean and intuitive interface.",
       image: textify,
       tags: ["React", "JavaScript", "CSS", "HTML", "Bootstrap"],
       github: "https://github.com/noor-1457/Textify",
+      demo: "https://textify-sigma.vercel.app/",
     },
+    {
+      id: 4,
+      title: "The Bakery",
+      description:
+        "I designed and developed this bakery website with a modern, user-friendly interface to showcase delicious baked products in an engaging way.",
+      image: bakery,
+      tags: ["JavaScript", "CSS", "HTML"],
+      github: "https://github.com/noor-1457/Online-Bakery-",
+      demo: "https://online-bakery-kappa.vercel.app/",
+    },
+    {
+      id: 5,
+      title: "Recipe Generator",
+      description:
+        "I developed a recipe generator that allows users to discover new dishes and share their favorite recipes through an engaging and user-friendly interface.",
+      image: recipe,
+      tags: ["JavaScript", "CSS", "HTML", "Recipe API"],
+      github: "https://github.com/noor-1457/Recipe-Generator",
+      demo: "https://noor-1457.github.io/Recipe-Generator/",
+    },
+    {
+      id: 6,
+      title: "To-Do App",
+      description:
+        "I developed a to-do app that helps users manage and organize their tasks efficiently through a clean and intuitive interface.",
+      image: todo,
+      tags: ["JavaScript", "CSS", "HTML"],
+      github: "https://github.com/noor-1457/To-do-List",
+      demo: "https://to-do-list-lfzw.vercel.app/",
+    },
+    {
+      id: 7,
+      title: "Currency Converter",
+      description:
+        "I developed a currency converter that delivers real-time exchange rates through a clean, intuitive, and user-friendly interface.",
+      image: currency,
+      tags: ["JavaScript", "CSS", "HTML", "Currency API"],
+      github: "https://github.com/noor-1457/currency-exchanger",
+      demo: "https://currency-exchanger-rust.vercel.app/",
+    },
+    {
+      id: 8,
+      title: "Weather",
+      description:
+        "I developed a weather app that delivers real-time forecasts through a clean, intuitive, and user-friendly interface, making it easy for users to stay prepared.",
+      image: weather,
+      tags: ["JavaScript", "CSS", "HTML", "Weather API"],
+      github: "https://github.com/noor-1457/Weather-app",
+      demo: "https://noor-1457.github.io/Weather-app/",
+    },
+    // {
+    //   id: 9,
+    //   title: "Ripple News App",
+    //   description:
+    //     "I developed this news application to provide users with the latest updates through a clean, responsive, and user-friendly interface. It ensures a smooth browsing experience while keeping users informed in real time.",
+    //   image: news,
+    //   tags: ["React", "JavaScript", "CSS", "HTML", "News API", "Bootstrap"],
+    //   github: "https://github.com/noor-1457/Ripple-News",
+    //   demo: "https://ripple-news-nine.vercel.app/general",
+    // },
   ];
 
   return (
@@ -197,7 +216,8 @@ function Projects({ DarkMode }) {
                   </a>
                   {/* demo */}
                   <a
-                    href="#"
+                    href={project.demo}
+                    target="blank"
                     style={{
                       background: "linear-gradient(to right, #f97316, #f59e0b)",
                     }}

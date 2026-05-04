@@ -10,7 +10,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 const App = () => {
-  const [DarkMode, setDarkMode] = useState(true);
+  const [DarkMode, setDarkMode] = useState(false);
   useEffect(() => {
     AOS.init({
       duration: 1000,
