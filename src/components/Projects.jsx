@@ -7,6 +7,7 @@ import recipe from "../assets/food-recipes.png";
 import weather from "../assets/weather.png";
 import chiccloset from "../assets/chiccloset.png";
 import textify from "../assets/textify.png";
+import portfolio from "../assets/portfolio.png";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 function Projects({ DarkMode }) {
@@ -33,6 +34,16 @@ function Projects({ DarkMode }) {
     },
     {
       id: 3,
+      title: "Portfolio",
+      description:
+        "I developed a responsive portfolio website to showcase my skills, projects, and experience in a modern and visually appealing way.",
+      image: portfolio,
+      tags: ["JavaScript", "CSS", "HTML"],
+      github: "https://github.com/noor-1457/My-Portfolio",
+      demo: "https://my-portfolio-zeta-one-28.vercel.app/",
+    },
+    {
+      id: 4,
       title: "Textify",
       description:
         "I developed Textify, an app that enables users to create, organize, and manage their notes efficiently through a clean and intuitive interface.",
@@ -42,7 +53,7 @@ function Projects({ DarkMode }) {
       demo: "https://textify-sigma.vercel.app/",
     },
     {
-      id: 4,
+      id: 5,
       title: "The Bakery",
       description:
         "I designed and developed this bakery website with a modern, user-friendly interface to showcase delicious baked products in an engaging way.",
@@ -52,7 +63,7 @@ function Projects({ DarkMode }) {
       demo: "https://online-bakery-kappa.vercel.app/",
     },
     {
-      id: 5,
+      id: 6,
       title: "Recipe Generator",
       description:
         "I developed a recipe generator that allows users to discover new dishes and share their favorite recipes through an engaging and user-friendly interface.",
@@ -62,7 +73,7 @@ function Projects({ DarkMode }) {
       demo: "https://noor-1457.github.io/Recipe-Generator/",
     },
     {
-      id: 6,
+      id: 7,
       title: "To-Do App",
       description:
         "I developed a to-do app that helps users manage and organize their tasks efficiently through a clean and intuitive interface.",
@@ -72,7 +83,7 @@ function Projects({ DarkMode }) {
       demo: "https://to-do-list-lfzw.vercel.app/",
     },
     {
-      id: 7,
+      id: 8,
       title: "Currency Converter",
       description:
         "I developed a currency converter that delivers real-time exchange rates through a clean, intuitive, and user-friendly interface.",
@@ -82,7 +93,7 @@ function Projects({ DarkMode }) {
       demo: "https://currency-exchanger-rust.vercel.app/",
     },
     {
-      id: 8,
+      id: 9,
       title: "Weather",
       description:
         "I developed a weather app that delivers real-time forecasts through a clean, intuitive, and user-friendly interface, making it easy for users to stay prepared.",
@@ -91,6 +102,7 @@ function Projects({ DarkMode }) {
       github: "https://github.com/noor-1457/Weather-app",
       demo: "https://noor-1457.github.io/Weather-app/",
     },
+
     // {
     //   id: 9,
     //   title: "Ripple News App",
