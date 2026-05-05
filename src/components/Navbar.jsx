@@ -91,7 +91,7 @@ export const Navbar = ({ DarkMode, toggleDarkMode }) => {
             whileTap={{ scale: 0.9 }}
             onClick={toggleDarkMode}
             className={`p-2 rounded-full ${
-              DarkMode ? "bg-gray-700" : "bg-gray-200"
+              DarkMode ? "bg-orange-500" : "bg-orange-400"
             }`}
           >
             {DarkMode ? <Sun /> : <Moon />}
@@ -110,12 +110,18 @@ export const Navbar = ({ DarkMode, toggleDarkMode }) => {
         {/* ✅ Mobile Controls */}
         <div className="flex lg:hidden items-center space-x-3">
           {/* Dark Mode */}
-          <button onClick={toggleDarkMode}>
+          <button onClick={toggleDarkMode}
+           className={`p-2 rounded-full ${
+              DarkMode ? "bg-orange-500" : "bg-orange-400"
+            }`}>
             {DarkMode ? <Sun /> : <Moon />}
           </button>
 
           {/* Hamburger */}
-          <button onClick={() => setIsOpen(!isOpen)}>
+          <button onClick={() => setIsOpen(!isOpen)}
+             className={`p-2 rounded-full ${
+              DarkMode ? "bg-orange-500" : "bg-orange-400"
+            }`}>
             {isOpen ? <X /> : <Menu />}
           </button>
         </div>

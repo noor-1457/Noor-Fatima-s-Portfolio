@@ -31,25 +31,22 @@ const Hero = ({ DarkMode }) => {
     textPrimary: "text-white",
     textSecondary: "text-gray-500",
     buttonSecondary:
-      "text-white border-2 border-orange-500 hover:bg-orange-600",
-    decorativeCircle: "bg-orange-300 opacity-10",
+      "text-white border-2 border-orange-400 hover:bg-orange-600",
+    decorativeCircle: "bg-orange-500 opacity-10",
   };
 
   const LightTheme = {
     textPrimary: "text-gray-900",
     textSecondary: "text-gray-700",
     buttonSecondary:
-      "text-gray-800 border-2 border-orange-500 hover:bg-orange-600 hover:text-gray-800",
-    decorativeCircle: "bg-orange-400 opacity-20",
+      "text-gray-800 border-2 border-orange-600 hover:bg-orange-500 hover:text-gray-800",
+    decorativeCircle: "bg-orange-500 opacity-30",
   };
 
   const theme = DarkMode ? DarkTheme : LightTheme;
 
   return (
     <div className="relative overflow-hidden min-h-screen flex flex-col">
-      <div
-        className={`absolute -top-10- -left-20 w-40 h-40 sm:w-64 sm:h-64 ${theme.decorativeCircle} rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse delay-1000 hidden sm:block`}
-      ></div>
       <section id="home" data-aos-delay="250" className="body-font z-10">
         <div
           className="container mx-auto flex px-4 sm:px-8 lg:px-14
@@ -145,7 +142,10 @@ const Hero = ({ DarkMode }) => {
           </div>
         </div>
         <div
-          className={`absolute -top-10- -left-20 w-40 h-40 sm:w-64 sm:h-64 ${theme.decorativeCircle} rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse delay-1000 hidden sm:block`}
+          className={`absolute top-105 -right-20 w-40 h-40 sm:w-64 sm:h-64 ${theme.decorativeCircle} rounded-full mix-blend-multiply filter blur-3xl  animate-pulse delay-1000 hidden sm:block`}
+        ></div>
+        <div
+          className={`absolute top-105 -left-20 w-40 h-40 sm:w-64 sm:h-64 ${theme.decorativeCircle} rounded-full mix-blend-multiply filter blur-3xl  animate-pulse delay-1000 hidden sm:block`}
         ></div>
       </section>
     </div>

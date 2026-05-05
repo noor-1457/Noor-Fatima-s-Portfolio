@@ -249,7 +249,7 @@ function Projects({ DarkMode }) {
           ))}
         </div>
         <div className="text-center mt-10 ">
-          <a
+          {/* <a
             href="https://github.com/noor-1457"
             target="_blank"
             style={{
@@ -264,9 +264,9 @@ function Projects({ DarkMode }) {
           >
             <FaGithub />
             <span>View All Projects</span>
-          </a>
+          </a> */}
 
-          <a
+          {/* <a
             href="#"
             style={{
               background: "linear-gradient(to right, #f97316, #f59e0b)",
@@ -280,7 +280,7 @@ function Projects({ DarkMode }) {
           >
             <FaExternalLinkAlt className="text-sm" />
             <span>Demo</span>
-          </a>
+          </a> */}
         </div>
       </div>
     </section>
