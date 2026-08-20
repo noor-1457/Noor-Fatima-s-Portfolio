@@ -1,154 +1,146 @@
-import instagram from "../assets/insta.png";
-import linkedin from "../assets/linkedIn.png";
-import facebook from "../assets/facebook.webp";
-import github from "../assets/github.png";
-import hi from "../assets/hi.png";
-import CV from "../assets/CV.pdf";
-import { DownloadIcon, Mail } from "lucide-react";
-import hero from "../assets/hero.png";
+// Hero.jsx
+import React from "react";
+import { ArrowRight, MapPin, Calendar } from "lucide-react";
+// ✅ React Icons se import karein
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+import heroImage from "../assets/hero.png";
 
-const Hero = ({ DarkMode }) => {
-  const socialIcons = [
-    {
-      icon: instagram,
-      alt: "instagram",
-      link: "https://www.instagram.com/noori_1119/?__pwa=1",
-    },
-    {
-      icon: facebook,
-      alt: "facebook",
-      link: "https://www.facebook.com/profile.php?id=61581190679650",
-    },
-    {
-      icon: linkedin,
-      alt: "linkedin",
-      link: "https://www.linkedin.com/in/noor-fatima-zafar-63a609318/",
-    },
-    { icon: github, alt: "github", href: "https://github.com/noor-1457" },
+const Hero = () => {
+  const socialLinks = [
+    { icon: <FaGithub className="w-5 h-5" />, url: "https://github.com/noor-1457", label: "GitHub" },
+    { icon: <FaLinkedin className="w-5 h-5" />, url: "https://www.linkedin.com/in/noor-fatima-zafar-63a609318/", label: "LinkedIn" },
+    { icon: <FaTwitter className="w-5 h-5" />, url: "https://twitter.com/", label: "Twitter" },
+    { icon: <FaEnvelope className="w-5 h-5" />, url: "mailto:noor@email.com", label: "Email" },
   ];
 
-  const DarkTheme = {
-    textPrimary: "text-white",
-    textSecondary: "text-gray-500",
-    buttonSecondary:
-      "text-white border-2 border-orange-400 hover:bg-orange-600",
-    decorativeCircle: "bg-orange-500 opacity-10",
-  };
-
-  const LightTheme = {
-    textPrimary: "text-gray-900",
-    textSecondary: "text-gray-700",
-    buttonSecondary:
-      "text-gray-800 border-2 border-orange-600 hover:bg-orange-500 hover:text-gray-800",
-    decorativeCircle: "bg-orange-500 opacity-30",
-  };
-
-  const theme = DarkMode ? DarkTheme : LightTheme;
-
   return (
-    <div className="relative overflow-hidden min-h-screen flex flex-col">
-      <section id="home" data-aos-delay="250" className="body-font z-10">
-        <div
-          className="container mx-auto flex px-4 sm:px-8 lg:px-14
-             py-12 lg:py-14 flex-col lg:flex-row items-center justify-between
-             lg:mt-14 mt-14 "
-        >
-          <div
-            className="lg:w-1/2 w-full flex flex-col items-center lg:itens-start 
-                 text-center lg:text-left mb-12 lg:mb-0"
-          >
-            <div
-              className="flex justify-center lg:justify-start
-                    gap-4 sm:gap-6 mb-6 sm:mb-7 w-full"
-            >
-              {socialIcons.map((social, index) => (
+    <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-[#0a0a0a]">
+      {/* Background Gradient */}
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-500/5 to-transparent pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-gradient-to-tr from-blue-600/5 to-transparent pointer-events-none"></div>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div className="space-y-6" data-aos="fade-right">
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-sm text-blue-400">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+              </span>
+              Available for Work
+            </div>
+
+            {/* Title */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+              <span className="text-white">Hi, I'm</span>
+              <br />
+              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                Noor Fatima
+              </span>
+            </h1>
+
+            {/* Subtitle */}
+            <p className="text-xl text-blue-300 font-medium">
+              Full-Stack Web Developer
+            </p>
+
+            {/* Description */}
+            <p className="text-gray-400 text-base max-w-lg leading-relaxed">
+              Building scalable web applications with modern tech, clean architecture, 
+              and a passion for creating exceptional digital experiences.
+            </p>
+
+            {/* Location & Info */}
+            <div className="flex flex-wrap items-center gap-4 text-sm text-gray-400">
+              <span className="flex items-center gap-1.5">
+                <MapPin className="w-4 h-4 text-blue-400" />
+                Pakistan • Remote
+              </span>
+              <span className="w-px h-4 bg-gray-700"></span>
+              <span className="flex items-center gap-1.5">
+                <Calendar className="w-4 h-4 text-blue-400" />
+                Available Worldwide
+              </span>
+            </div>
+
+            {/* Buttons */}
+            <div className="flex flex-wrap gap-4 pt-2">
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
+              >
+                Hire Me
+                <ArrowRight className="w-4 h-4" />
+              </a>
+              <a
+                href="#projects"
+                className="inline-flex items-center gap-2 px-8 py-3 rounded-full border border-gray-700 hover:border-blue-500 text-gray-300 hover:text-white font-medium transition-all duration-300 hover:bg-blue-500/10"
+              >
+                View Projects
+              </a>
+            </div>
+
+            {/* Social Links */}
+            <div className="flex gap-3 pt-4">
+              {socialLinks.map((social, index) => (
                 <a
                   key={index}
-                  href={social.link}
+                  href={social.url}
                   target="_blank"
-                  data-aos-delay={`${400 + index * 100}`}
-                  className="transform transition-transform duration-300 hover:scale-110"
+                  rel="noopener noreferrer"
+                  className="p-2.5 rounded-lg bg-[#1a1a1a] border border-gray-800 text-gray-400 hover:text-blue-400 hover:border-blue-500/50 hover:bg-blue-500/10 transition-all duration-300"
+                  aria-label={social.label}
                 >
-                  <img
-                    src={social.icon}
-                    alt={social.alt}
-                    className={`w-8 h8 sm:w-10 sm:h-10
-                                object-contain ${DarkMode ? "" : "filter brightness-75"}`}
-                  />
+                  {social.icon}
                 </a>
               ))}
             </div>
-            <h1
-              className={`title-font text-3xl sm:text-4xl lg:text-5xl font-bold ${theme.textPrimary}`}
-              data-aos="fade-up"
-              data-aos-delay="500"
-            >
-              Hi, I'm Noor Fatima.
-            </h1>
-            <p
-              className={`mb-6 sm:mb-8 leading-relaxed max-w-md sm:max-w-lg ${theme.textSecondary}`}
-              data-aos="fade-up"
-              data-aos-delay="600"
-            >
-              Frontend Web Developer turning ideas into clean, interactive, and
-              user-friendly websites. I craft responsive designs with HTML, CSS,
-              JavaScript, and modern frameworks like React. Let's build
-              something amazing together!
-            </p>
-            {/* buttons */}
-            <div className="w-full pt-4 sm:pt-6">
-              <div
-                className="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 sm:gap-4"
-                data-aos="fade-up"
-                data-aos-delay="700"
-              >
-                <a href={CV} download className="w-full sm:w-auto">
-                  <button className="w-full sm:w-auto inline-flex items-center justify-center text-white bg-gradient-to-r from-orange-500 to-amber-500 border-0 py-3 px-8 hover:shadow-[0_0_40px_rgba(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform">
-                    <DownloadIcon className="w-4 h-4 sm:h-5 sm:w-5 mr-2" />
-                    Download CV
-                  </button>
-                </a>
-                <a href="#contact" className="w-full sm:w-auto">
-                  <button
-                    className={`w-full sm:w-auto inline-flex items-center justify-center  border-0 py-3 px-8 hover:shadow-[0_0_40px_rgba(255,165,0,0.7)] rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform ${theme.buttonSecondary} `}
-                  >
-                    <Mail className="w-4 h-4 sm:h-5 sm:w-5 mr-2" />
-                    Contact Me
-                  </button>
-                </a>
-              </div>
-            </div>
           </div>
-          {/* Image */}
-          <div
-            className="lg:w-1/2 w-full max-w-md lg:max-w-lg  mt-0 lg:mt-0 flex justify-center"
-            data-aos="fade-left"
-            data-aos-delay="800"
-          >
-            <div className="relative w-4/5 sm:w-3/4 lg:w-full">
-              <div className="relative overflow-hidden">
+
+          {/* Right Content - Image */}
+          <div className="flex justify-center lg:justify-end" data-aos="fade-left">
+            <div className="relative">
+              {/* Glow Effect */}
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl"></div>
+              
+              {/* Image Container */}
+              <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-2 border-blue-500/20 bg-gradient-to-b from-blue-500/5 to-transparent">
                 <img
-                  src={hero}
-                  alt="Hero Image"
-                  className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500"
+                  src={heroImage}
+                  alt="Noor Fatima"
+                  className="w-full h-full object-cover"
                 />
               </div>
-              <img
-                src={hi}
-                alt="Hi icon"
-                className="absolute top-2 sm:top-4 left-12 sm:left-20 w-25 h-25 sm:w-20 sm:h-20 object-contain animate-bounce opacity-90 z-10"
-              />
+
+              {/* Floating Badge */}
+              <div className="absolute -bottom-4 -right-4 bg-[#1a1a1a] border border-gray-800 rounded-xl p-4 shadow-xl">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold">100k+</p>
+                    <p className="text-gray-400 text-xs">Users Impacted</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Stats Badge */}
+              <div className="absolute -top-4 -left-4 bg-[#1a1a1a] border border-gray-800 rounded-xl p-3 shadow-xl">
+                <div className="text-center">
+                  <p className="text-blue-400 font-bold text-lg">2023</p>
+                  <p className="text-gray-400 text-xs">Remote Since</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div
-          className={`absolute top-105 -right-20 w-40 h-40 sm:w-64 sm:h-64 ${theme.decorativeCircle} rounded-full mix-blend-multiply filter blur-3xl  animate-pulse delay-1000 hidden sm:block`}
-        ></div>
-        <div
-          className={`absolute top-105 -left-20 w-40 h-40 sm:w-64 sm:h-64 ${theme.decorativeCircle} rounded-full mix-blend-multiply filter blur-3xl  animate-pulse delay-1000 hidden sm:block`}
-        ></div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

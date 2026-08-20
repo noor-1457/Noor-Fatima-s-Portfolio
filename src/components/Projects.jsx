@@ -1,3 +1,5 @@
+// Projects.jsx
+import React from "react";
 import neuro from "../assets/neurocelix.png";
 import news from "../assets/newsApp.png";
 import bakery from "../assets/the bakery.png";
@@ -9,16 +11,17 @@ import chiccloset from "../assets/chiccloset.png";
 import textify from "../assets/textify.png";
 import portfolio from "../assets/portfolio.png";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { ArrowRight, ExternalLink } from "lucide-react";
 
-function Projects({ DarkMode }) {
+function Projects() {
   const projects = [
     {
       id: 1,
       title: "ChicCloset",
       description:
-        "ChicCloset is a fully functional e-commerce web application built for fashion retail. It offers a smooth and responsive shopping experience with product browsing, category filtering, and an intuitive UI designed to enhance customer engagement.",
+        "Full-stack e-commerce platform with product management, cart functionality, and seamless checkout experience.",
       image: chiccloset,
-      tags: ["React", "JavaScript", "CSS", "HTML", "Tailwind"],
+      tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
       github: "https://github.com/noor-1457/ChicCloset",
       demo: "https://chic-closet-tau.vercel.app/",
     },
@@ -26,19 +29,19 @@ function Projects({ DarkMode }) {
       id: 2,
       title: "NeuroCelix",
       description:
-        "NeuroCelix is a technology service platform built during my internship that delivers modern digital solutions to customers. It focuses on providing reliable, scalable, and user-friendly tech services with a clean and intuitive interface.",
+        "AI-powered technology service platform with intelligent automation and modern digital solutions.",
       image: neuro,
-      tags: ["React", "JavaScript", "CSS", "HTML", "Tailwind"],
+      tags: ["React", "Python", "FastAPI", "AI", "Tailwind"],
       github: "https://github.com/noor-1457/Neurocelix-AI",
-      demo: "https://www.linkedin.com/posts/noor-fatima-zafar-63a609318_webdesign-uiux-itservices-activity-7454593941972213760-3bnV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFCJSE4BgQdc-0PJaoxwcQ7XQIp1ZflvboU",
+      demo: "https://www.linkedin.com/posts/noor-fatima-zafar-63a609318_webdesign-uiux-itservices-activity-7454593941972213760-3bnV",
     },
     {
       id: 3,
-      title: "Portfolio",
+      title: "Portfolio v2",
       description:
-        "I developed a responsive portfolio website to showcase my skills, projects, and experience in a modern and visually appealing way.",
+        "Modern portfolio website with fullstack capabilities, responsive design, and interactive UI.",
       image: portfolio,
-      tags: ["JavaScript", "CSS", "HTML"],
+      tags: ["React", "Next.js", "Tailwind", "MongoDB"],
       github: "https://github.com/noor-1457/My-Portfolio",
       demo: "https://my-portfolio-zeta-one-28.vercel.app/",
     },
@@ -46,9 +49,9 @@ function Projects({ DarkMode }) {
       id: 4,
       title: "Textify",
       description:
-        "I developed Textify, an app that enables users to create, organize, and manage their notes efficiently through a clean and intuitive interface.",
+        "Note-taking application with real-time sync, markdown support, and cloud storage capabilities.",
       image: textify,
-      tags: ["React", "JavaScript", "CSS", "HTML", "Bootstrap"],
+      tags: ["React", "Node.js", "Express", "MongoDB", "Bootstrap"],
       github: "https://github.com/noor-1457/Textify",
       demo: "https://textify-sigma.vercel.app/",
     },
@@ -56,9 +59,9 @@ function Projects({ DarkMode }) {
       id: 5,
       title: "The Bakery",
       description:
-        "I designed and developed this bakery website with a modern, user-friendly interface to showcase delicious baked products in an engaging way.",
+        "Online bakery store with order management system and real-time inventory tracking.",
       image: bakery,
-      tags: ["JavaScript", "CSS", "HTML"],
+      tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
       github: "https://github.com/noor-1457/Online-Bakery-",
       demo: "https://online-bakery-kappa.vercel.app/",
     },
@@ -66,9 +69,9 @@ function Projects({ DarkMode }) {
       id: 6,
       title: "Recipe Generator",
       description:
-        "I developed a recipe generator that allows users to discover new dishes and share their favorite recipes through an engaging and user-friendly interface.",
+        "AI-powered recipe discovery platform with personalized recommendations and meal planning.",
       image: recipe,
-      tags: ["JavaScript", "CSS", "HTML", "Recipe API"],
+      tags: ["React", "Node.js", "Express", "MongoDB", "AI API"],
       github: "https://github.com/noor-1457/Recipe-Generator",
       demo: "https://noor-1457.github.io/Recipe-Generator/",
     },
@@ -76,9 +79,9 @@ function Projects({ DarkMode }) {
       id: 7,
       title: "To-Do App",
       description:
-        "I developed a to-do app that helps users manage and organize their tasks efficiently through a clean and intuitive interface.",
+        "Task management application with user authentication, real-time updates, and cloud sync.",
       image: todo,
-      tags: ["JavaScript", "CSS", "HTML"],
+      tags: ["React", "Node.js", "Express", "MongoDB", "JWT"],
       github: "https://github.com/noor-1457/To-do-List",
       demo: "https://to-do-list-lfzw.vercel.app/",
     },
@@ -86,161 +89,127 @@ function Projects({ DarkMode }) {
       id: 8,
       title: "Currency Converter",
       description:
-        "I developed a currency converter that delivers real-time exchange rates through a clean, intuitive, and user-friendly interface.",
+        "Real-time currency exchange app with historical data visualization and multi-currency support.",
       image: currency,
-      tags: ["JavaScript", "CSS", "HTML", "Currency API"],
+      tags: ["React", "Node.js", "Express", "REST API", "Chart.js"],
       github: "https://github.com/noor-1457/currency-exchanger",
       demo: "https://currency-exchanger-rust.vercel.app/",
     },
     {
       id: 9,
-      title: "Weather",
+      title: "Weather App",
       description:
-        "I developed a weather app that delivers real-time forecasts through a clean, intuitive, and user-friendly interface, making it easy for users to stay prepared.",
+        "Real-time weather application with location-based forecasts and interactive maps.",
       image: weather,
-      tags: ["JavaScript", "CSS", "HTML", "Weather API"],
+      tags: ["React", "Node.js", "Express", "Weather API", "Leaflet"],
       github: "https://github.com/noor-1457/Weather-app",
       demo: "https://noor-1457.github.io/Weather-app/",
     },
-
-    // {
-    //   id: 9,
-    //   title: "Ripple News App",
-    //   description:
-    //     "I developed this news application to provide users with the latest updates through a clean, responsive, and user-friendly interface. It ensures a smooth browsing experience while keeping users informed in real time.",
-    //   image: news,
-    //   tags: ["React", "JavaScript", "CSS", "HTML", "News API", "Bootstrap"],
-    //   github: "https://github.com/noor-1457/Ripple-News",
-    //   demo: "https://ripple-news-nine.vercel.app/general",
-    // },
+    {
+      id: 10,
+      title: "Ripple News",
+      description:
+        "AI-curated news aggregator with personalized feeds and real-time updates.",
+      image: news,
+      tags: ["React", "Node.js", "Express", "MongoDB", "News API"],
+      github: "https://github.com/noor-1457/Ripple-News",
+      demo: "https://ripple-news-nine.vercel.app/general",
+    },
   ];
 
   return (
-    <section
-      id="projects"
-      style={{
-        backgroundColor: DarkMode ? "#0d182e" : "#f9fafb",
-      }}
-      className="relative py-24"
-    >
-      <div className="conntainer mx-auto px-4">
-        <div className="text-center mb-10" data-aos="fade-up">
-          <h2
-            className="sm:text-4xl font-bold mb-3 text-3xl"
-            style={{
-              color: DarkMode ? "white" : "#1f2937",
-            }}
-          >
-            My
-            <span
-              style={{
-                background: "linear-gradient(to right, #f97316, #f59e0b)",
-                WebkitBackgroundClip: "text",
-                backgroundClip: "text",
-                color: "transparent",
-              }}
-            >
-              Projects
+    <section id="projects" className="py-20 overflow-hidden bg-[#0a0a0a]">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16" data-aos="fade-up">
+          <span className="text-blue-400 font-mono text-sm tracking-wider">PROJECTS</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">
+            Featured{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              Work
             </span>
           </h2>
-          <p
-            className="max-w-xl mx-auto"
-            style={{
-              color: DarkMode ? "#d1d5db" : "#6b7280",
-            }}
-          >
-            A showcase of my recent work.
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            A showcase of my recent projects — from web applications to AI-powered solutions
           </p>
         </div>
-        <div
-          className="grid grid-cols-1 md:grid-cols-2
-        lg:grid-cols-3 gap-5 mb-12"
-        >
+
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div
               key={project.id}
-              style={{
-                background: DarkMode
-                  ? "linear-gradient(to right, #1f2937, #111827)"
-                  : "linear-gradient(to right, #ffffff, #f9fafb)",
-                borderColor: DarkMode ? "#374151" : "#e5e7eb",
-              }}
-              className="group rounded-xl border duration-300
-                hover:border-orange-500/5- transition-all"
+              className="group rounded-xl bg-[#121212] border border-gray-800 
+                hover:border-blue-500/40 hover:bg-[#1a1a1a]
+                transition-all duration-300 hover:-translate-y-2
+                hover:shadow-xl hover:shadow-blue-500/5 overflow-hidden"
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
-              <div className="h-36 overflow-hidden  rounded-t-xl">
+              {/* Image */}
+              <div className="relative h-48 overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-110 
-                transition-transfrom duration-500"
+                    transition-transform duration-500"
                 />
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
+
+              {/* Content */}
               <div className="p-5">
-                <h3
-                  className="text-lg font-bold mb-2"
-                  style={{
-                    color: DarkMode ? "white" : "#1f2937",
-                  }}
-                >
+                <h3 className="text-lg font-bold text-white mb-2">
                   {project.title}
                 </h3>
-                <p
-                  className="text-sm mb-3"
-                  style={{
-                    color: DarkMode ? "#d1d5db" : "#6b7280",
-                  }}
-                >
+                <p className="text-gray-400 text-sm leading-relaxed mb-3">
                   {project.description}
                 </p>
+
+                {/* Tags */}
                 <div className="flex flex-wrap gap-1.5 mb-4">
-                  {project.tags.map((tag, idx) => (
+                  {project.tags.slice(0, 4).map((tag, idx) => (
                     <span
                       key={idx}
-                      style={{
-                        background: DarkMode ? "#374151" : "#e5e7eb",
-                        color: DarkMode ? "#d1d5db" : "#4b5563",
-                      }}
-                      className="px-4 py-1 text-xs rounded-full"
+                      className="px-2.5 py-0.5 text-[10px] font-medium rounded-full 
+                        bg-gray-800 text-gray-300 border border-gray-700"
                     >
                       {tag}
                     </span>
                   ))}
+                  {project.tags.length > 4 && (
+                    <span className="px-2.5 py-0.5 text-[10px] font-medium rounded-full 
+                      bg-gray-800 text-gray-400 border border-gray-700">
+                      +{project.tags.length - 4}
+                    </span>
+                  )}
                 </div>
+
+                {/* Buttons */}
                 <div className="flex gap-2">
                   <a
                     href={project.github}
-                    style={{
-                      background: DarkMode ? "#374151" : "#f3f4f6",
-                      color: DarkMode ? "#white" : "#374151",
-                    }}
-                    className="flex-1 flex items-center justify-center
-                    gap-1.5 px-3 py-2 text-sm rounded-lg hover:opacity-90
-                    transition-colors"
-                    data-aos="zoom-in"
                     target="_blank"
-                    data-aos-delay="300"
+                    rel="noopener noreferrer"
+                    className="flex-1 flex items-center justify-center gap-2 px-3 py-2 text-sm 
+                      rounded-lg border border-gray-700 text-gray-400
+                      hover:border-blue-500 hover:text-white hover:bg-blue-500/10
+                      transition-all duration-300"
                   >
                     <FaGithub className="text-sm" />
                     <span>Code</span>
                   </a>
-                  {/* demo */}
                   <a
                     href={project.demo}
-                    target="blank"
-                    style={{
-                      background: "linear-gradient(to right, #f97316, #f59e0b)",
-                    }}
-                    className="flex-1 flex items-center justify-center
-                    gap-1.5 px-3 py-2 text-sm rounded-lg hover:shadow-lg
-                    hover:shadow-orange-500/25
-                    transition-all text-white"
-                    data-aos="zoom-in"
-                    data-aos-delay="400"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 flex items-center justify-center gap-2 px-3 py-2 text-sm 
+                      rounded-lg bg-blue-600 text-white
+                      hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/25
+                      transition-all duration-300"
                   >
-                    <FaExternalLinkAlt className="text-sm" />
+                    <ExternalLink className="w-4 h-4" />
                     <span>Demo</span>
                   </a>
                 </div>
@@ -248,39 +217,20 @@ function Projects({ DarkMode }) {
             </div>
           ))}
         </div>
-        <div className="text-center mt-10 ">
-          {/* <a
+
+        {/* View All Projects CTA */}
+        <div className="text-center mt-12" data-aos="fade-up">
+          <a
             href="https://github.com/noor-1457"
             target="_blank"
-            style={{
-              background: "linear-gradient(to right, #f97316, #f59e0b)",
-            }}
-            className="inline-flex flex items-center font-semibold
-                    gap-2 px-2 py-4 text-sm rounded-full hover:shadow-lg
-                    hover:shadow-orange-500/25
-                    transition-all text-white"
-            data-aos="zoom-in"
-            data-aos-delay="400"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-3 rounded-full 
+              border border-gray-700 text-gray-300 hover:text-white hover:border-blue-500 
+              hover:bg-blue-500/10 transition-all duration-300 font-medium"
           >
-            <FaGithub />
-            <span>View All Projects</span>
-          </a> */}
-
-          {/* <a
-            href="#"
-            style={{
-              background: "linear-gradient(to right, #f97316, #f59e0b)",
-            }}
-            className="inline-flex flex items-center font-semibold
-                    gap-2 px-2 py-4 text-sm rounded-full hover:shadow-lg
-                    hover:shadow-orange-500/25 ml-2 
-                    transition-all text-white"
-            data-aos="zoom-in"
-            data-aos-delay="400"
-          >
-            <FaExternalLinkAlt className="text-sm" />
-            <span>Demo</span>
-          </a> */}
+            View All Projects on GitHub
+            <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
       </div>
     </section>

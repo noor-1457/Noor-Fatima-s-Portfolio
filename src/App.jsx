@@ -1,51 +1,41 @@
-import { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
+// App.jsx
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+// Import Components
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Qualifications from "./components/Qualifications";
+import Services from "./components/Services";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
-const App = () => {
-  const [DarkMode, setDarkMode] = useState(false);
+function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      once: false,
-      offset: 100,
+      duration: 800,
+      once: true,
+      easing: "ease-out-cubic",
     });
-    document.documentElement.classList.add("dark");
   }, []);
 
-  useEffect(() => {
-    AOS.refresh();
-  }, [DarkMode]);
-
-  const toggleDarkMode = () => {
-    const newMode = !DarkMode;
-    setDarkMode(newMode);
-    document.documentElement.classList.toggle("dark");
-  };
-
   return (
-    <div
-      className={
-        DarkMode
-          ? "bg-linear-to-br from-gray-900 via-[#0d182e] to-gray-900 min-h-screen"
-          : "bg-linear-to-br from-gray-50 to-blue-50 min-h-screen"
-      }
-    >
-      <Navbar DarkMode={DarkMode} toggleDarkMode={toggleDarkMode} />
-      <Hero DarkMode={DarkMode} />
-      <About DarkMode={DarkMode} />
-      <Skills DarkMode={DarkMode} />
-      <Projects DarkMode={DarkMode} />
-      <Contact DarkMode={DarkMode} />
-      <Footer DarkMode={DarkMode} />
+    <div className="bg-[#0a0a0a] min-h-screen">
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Qualifications />
+      <Services />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
-};
+}
+
 export default App;

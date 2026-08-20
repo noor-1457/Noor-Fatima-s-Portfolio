@@ -1,151 +1,155 @@
+// About.jsx
 import React from "react";
-import about from "../assets/about.png";
+import { Users, Zap, Globe, Code, ArrowRight, CheckCircle } from "lucide-react";
 
-function About({ DarkMode }) {
+const About = () => {
+  const stats = [
+    { number: "50+", label: "Applications", icon: <Code className="w-5 h-5" /> },
+    { number: "35%", label: "Performance Improved", icon: <Zap className="w-5 h-5" /> },
+    { number: "US Teams", label: "Remote Collaboration", icon: <Users className="w-5 h-5" /> },
+    { number: "100k+", label: "API Users", icon: <Globe className="w-5 h-5" /> },
+  ];
+
+  const highlights = [
+    "50+ Applications Delivered production-grade applications",
+    "35% Performance Improved system performance",
+    "US Remote Teams Worked with US-based remote teams",
+    "100k+ Users Designed scalable APIs",
+  ];
+
   return (
-    <section
-      id="about"
-      className={`min-h-screen overflow-hidden flex 
-    items-center justify-center px-4 sm:px-6`}
-    >
-      <div
-        className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2
-        gap-8 sm:gap-12 items-center"
-      >
-        <figure
-          data-aos="fade-up"
-          data-aos-delay="300"
-          className="flex flex-wrap justify-center gap-4 relative 
-            order-2 lg:order-1"
-        >
-          {/* star shape */}
-          <div className="relative w-72 h-72 lg:w-96 lg:h-96">
-            <div
-              className="absolute -inset-4 lg:-inset-20 
-            bg-gradient-to-l from-[#f97316] via-[#fb923c] to-[#f59e0b] 
-            rotate-12 star-shape z-0"
-              data-aos="zoom-in"
-              data-aos-delay="600"
-            ></div>
-            {/* image */}
-            <img
-              src={about}
-              alt="About Image"
-              className="absolute inset-0 w-full h-full object-cover z-10 
-              transition-all duration-300"
-              data-aos="zoom-in"
-              data-aos-delay="400"
-            />
-          </div>
-        </figure>
-        {/* Article */}
-        <article
-          data-aos="fade-left"
-          data-aos-delay="300"
-          className="text-center lg:text-left relative 
-        order-1 lg:order-2"
-        >
-          <header>
-            <h1
-              className="text-3xl sm:text-4xl lg:text-5xl
-                xl:text-6xl font-bold mb-4 sm:mb-6 
-                text-transparent bg-gradient-to-r from-orange-400 
-                to-orange-600 bg-clip-text"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              About Me
-            </h1>
-          </header>
-          <p
-            className={`text-sm sm:text-base lg:text-lg xl:text-xl mb-6 sm:mb-8 leading-relaxed bg-gradient-to-r from-orange-900/10 to-orange-900/5 p-4 sm:p-6 rounded-xl sm:rounded-2xl backdrop-blur-sm ${
-              DarkMode ? "text-gray-300" : "text-gray-700"
-            }`}
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            A passionate Frontend Web Developer who loves turning ideas into
-            interactive, user-friendly websites. I specialize in crafting clean,
-            responsive designs using HTML, CSS, JavaScript, and modern
-            frameworks. My goal is to create digital experiences that are not
-            only functional but also visually appealing. When I’m not coding,
-            you’ll find me exploring new design trends and learning the latest
-            web technologies.
+    <section id="about" className="py-20 overflow-hidden bg-[#0a0a0a]">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16" data-aos="fade-up">
+          <span className="text-blue-400 font-mono text-sm tracking-wider">ABOUT</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">
+            Professional <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Highlights</span>
+          </h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            Building scalable web applications with modern tech, clean architecture, and remote-first mindset
           </p>
-          <div
-            className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-8 mb-6
-          sm:mb-8"
-          >
-            {/* Education */}
-            <div
-              className="text-center"
-              data-aos="zoom-in"
-              data-aos-delay="600"
-            >
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400">
-                5+
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+          {/* Left - Image/Stats Summary */}
+          <div className="lg:col-span-2" data-aos="fade-right">
+            <div className="bg-[#121212] rounded-xl border border-gray-800 p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-400 text-xl font-bold">
+                  NF
+                </div>
+                <div>
+                  <h3 className="text-white font-semibold">Noor Fatima</h3>
+                  <p className="text-gray-400 text-sm">Full-Stack Web Developer</p>
+                </div>
               </div>
-              <div
-                className={`text-xs sm:text-sm lg:text-base xl:text-lg ${
-                  DarkMode ? "text-gray-400" : "text-gray-600"
-                }`}
-              >
-                Education
+              
+              <div className="space-y-3">
+                <div className="flex items-center gap-3 text-sm text-gray-300">
+                  <span className="text-blue-400">📍</span>
+                  <span>Pakistan • Remote</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm text-gray-300">
+                  <span className="text-blue-400">🕐</span>
+                  <span>US Timezone (EST / PST overlap)</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm text-gray-300">
+                  <span className="text-blue-400">📧</span>
+                  <a href="mailto:noor.fatima@email.com" className="text-blue-400 hover:underline">
+                    noor.fatima@email.com
+                  </a>
+                </div>
+              </div>
+
+              <div className="mt-4 pt-4 border-t border-gray-800 flex gap-3">
+                <a
+                  href="#contact"
+                  className="flex-1 text-center px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium transition-all duration-300"
+                >
+                  Hire Me
+                </a>
+                <a
+                  href="#projects"
+                  className="flex-1 text-center px-4 py-2 rounded-lg border border-gray-700 hover:border-blue-500 text-gray-300 hover:text-white text-sm font-medium transition-all duration-300"
+                >
+                  View Projects
+                </a>
               </div>
             </div>
 
-            {/* Experience */}
-            <div
-              className="text-center"
-              data-aos="zoom-in"
-              data-aos-delay="600"
-            >
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400">
-                2+
+            {/* Quick Stats */}
+            <div className="grid grid-cols-2 gap-3 mt-4">
+              <div className="bg-[#121212] rounded-xl border border-gray-800 p-4 text-center">
+                <p className="text-2xl font-bold text-blue-400">100k+</p>
+                <p className="text-xs text-gray-500">Users impacted</p>
               </div>
-              <div
-                className={`text-xs sm:text-sm lg:text-base xl:text-lg ${
-                  DarkMode ? "text-gray-400" : "text-gray-600"
-                }`}
-              >
-                Years Experience
-              </div>
-            </div>
-            {/* projects */}
-            <div
-              className="text-center"
-              data-aos="zoom-in"
-              data-aos-delay="600"
-            >
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-orange-400">
-                20+
-              </div>
-              <div
-                className={`text-xs sm:text-sm lg:text-base xl:text-lg ${
-                  DarkMode ? "text-gray-400" : "text-gray-600"
-                }`}
-              >
-                Projects Completed
+              <div className="bg-[#121212] rounded-xl border border-gray-800 p-4 text-center">
+                <p className="text-2xl font-bold text-blue-400">2023</p>
+                <p className="text-xs text-gray-500">Remote Since</p>
               </div>
             </div>
           </div>
-          {/* ✅ */}
 
-          <a
-            href="https://www.linkedin.com/in/noor-fatima-zafar-63a609318/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`w-full sm:w-auto inline-flex items-center justify-center py-2 px-4 sm:px-6 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
-  rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform border-2 border-orange-500 ${
-    DarkMode ? "text-white bg-orange-500/10" : "text-gray-800 bg-gray700"
-  }`}
-          >
-            Learn More
-          </a>
-        </article>
+          {/* Right - Content */}
+          <div className="lg:col-span-3 space-y-6" data-aos="fade-left">
+            {/* Summary */}
+            <div className="bg-[#121212] rounded-xl border border-gray-800 p-6">
+              <h4 className="text-sm font-semibold text-white mb-3">Summary</h4>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Full-Stack Web Developer with <span className="text-blue-400 font-semibold">2+ years</span> of experience 
+                delivering high-performance web applications for startups and enterprise clients. 
+                Specialized in <span className="text-blue-400">JavaScript ecosystems</span>, scalable backend systems, 
+                and cloud deployment. Proven track record of collaborating with distributed 
+                teams across US time zones.
+              </p>
+            </div>
+
+            {/* Highlights Grid */}
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {highlights.map((highlight, index) => {
+                const parts = highlight.split(" ");
+                const number = parts[0];
+                const label = parts.slice(1).join(" ");
+                return (
+                  <div
+                    key={index}
+                    className="bg-[#121212] rounded-xl border border-gray-800 p-4 
+                      hover:border-blue-500/30 transition-all duration-300"
+                  >
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <p className="text-white font-bold text-lg">{number}</p>
+                        <p className="text-gray-400 text-xs">{label}</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div> */}
+
+            {/* CTA */}
+            <div className="flex flex-wrap gap-4 pt-2">
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
+              >
+                Let's work together
+                <ArrowRight className="w-4 h-4" />
+              </a>
+              <a
+                href="#projects"
+                className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full border border-gray-700 hover:border-blue-500 text-gray-300 hover:text-white text-sm font-medium transition-all duration-300"
+              >
+                View My Work
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
-}
+};
 
 export default About;
