@@ -1,22 +1,25 @@
 // Projects.jsx
 import React from "react";
 import neuro from "../assets/neurocelix.png";
-import news from "../assets/newsApp.png";
-import bakery from "../assets/the bakery.png";
-import currency from "../assets/currencyConverter.png";
-import todo from "../assets/to-do.png";
-import recipe from "../assets/food-recipes.png";
-import weather from "../assets/weather.png";
 import chiccloset from "../assets/chiccloset.png";
-import textify from "../assets/textify.png";
-import portfolio from "../assets/portfolio.png";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import skyRoutes from "../assets/skyRoutes.png";
+import { FaGithub } from "react-icons/fa";
 import { ArrowRight, ExternalLink } from "lucide-react";
 
 function Projects() {
   const projects = [
     {
       id: 1,
+      title: "Sky Routes Marketing Travel Agency",
+      description:
+        "A modern travel website developed for a client, featuring an engaging and user-friendly platform for exploring travel destinations and experiences.",
+      image: skyRoutes,
+      tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
+      github: "https://github.com/noor-1457/Sky-Routes-Official",
+      demo: "https://sky-routes-official.vercel.app/",
+    },
+    {
+      id: 2,
       title: "ChicCloset",
       description:
         "Full-stack e-commerce platform with product management, cart functionality, and seamless checkout experience.",
@@ -26,94 +29,14 @@ function Projects() {
       demo: "https://chic-closet-tau.vercel.app/",
     },
     {
-      id: 2,
+      id: 3,
       title: "NeuroCelix",
       description:
         "AI-powered technology service platform with intelligent automation and modern digital solutions.",
       image: neuro,
-      tags: ["React", "Python", "FastAPI", "AI", "Tailwind"],
+      tags: ["React", "MongoDB", "Expressjs", "Nodejs", "Tailwind"],
       github: "https://github.com/noor-1457/Neurocelix-AI",
-      demo: "https://www.linkedin.com/posts/noor-fatima-zafar-63a609318_webdesign-uiux-itservices-activity-7454593941972213760-3bnV",
-    },
-    {
-      id: 3,
-      title: "Portfolio v2",
-      description:
-        "Modern portfolio website with fullstack capabilities, responsive design, and interactive UI.",
-      image: portfolio,
-      tags: ["React", "Next.js", "Tailwind", "MongoDB"],
-      github: "https://github.com/noor-1457/My-Portfolio",
-      demo: "https://my-portfolio-zeta-one-28.vercel.app/",
-    },
-    {
-      id: 4,
-      title: "Textify",
-      description:
-        "Note-taking application with real-time sync, markdown support, and cloud storage capabilities.",
-      image: textify,
-      tags: ["React", "Node.js", "Express", "MongoDB", "Bootstrap"],
-      github: "https://github.com/noor-1457/Textify",
-      demo: "https://textify-sigma.vercel.app/",
-    },
-    {
-      id: 5,
-      title: "The Bakery",
-      description:
-        "Online bakery store with order management system and real-time inventory tracking.",
-      image: bakery,
-      tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
-      github: "https://github.com/noor-1457/Online-Bakery-",
-      demo: "https://online-bakery-kappa.vercel.app/",
-    },
-    {
-      id: 6,
-      title: "Recipe Generator",
-      description:
-        "AI-powered recipe discovery platform with personalized recommendations and meal planning.",
-      image: recipe,
-      tags: ["React", "Node.js", "Express", "MongoDB", "AI API"],
-      github: "https://github.com/noor-1457/Recipe-Generator",
-      demo: "https://noor-1457.github.io/Recipe-Generator/",
-    },
-    {
-      id: 7,
-      title: "To-Do App",
-      description:
-        "Task management application with user authentication, real-time updates, and cloud sync.",
-      image: todo,
-      tags: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-      github: "https://github.com/noor-1457/To-do-List",
-      demo: "https://to-do-list-lfzw.vercel.app/",
-    },
-    {
-      id: 8,
-      title: "Currency Converter",
-      description:
-        "Real-time currency exchange app with historical data visualization and multi-currency support.",
-      image: currency,
-      tags: ["React", "Node.js", "Express", "REST API", "Chart.js"],
-      github: "https://github.com/noor-1457/currency-exchanger",
-      demo: "https://currency-exchanger-rust.vercel.app/",
-    },
-    {
-      id: 9,
-      title: "Weather App",
-      description:
-        "Real-time weather application with location-based forecasts and interactive maps.",
-      image: weather,
-      tags: ["React", "Node.js", "Express", "Weather API", "Leaflet"],
-      github: "https://github.com/noor-1457/Weather-app",
-      demo: "https://noor-1457.github.io/Weather-app/",
-    },
-    {
-      id: 10,
-      title: "Ripple News",
-      description:
-        "AI-curated news aggregator with personalized feeds and real-time updates.",
-      image: news,
-      tags: ["React", "Node.js", "Express", "MongoDB", "News API"],
-      github: "https://github.com/noor-1457/Ripple-News",
-      demo: "https://ripple-news-nine.vercel.app/general",
+      demo: "https://neurocelix-ai.vercel.app/",
     },
   ];
 
@@ -122,7 +45,9 @@ function Projects() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16" data-aos="fade-up">
-          <span className="text-blue-400 font-mono text-sm tracking-wider">PROJECTS</span>
+          <span className="text-blue-400 font-mono text-sm tracking-wider">
+            PROJECTS
+          </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">
             Featured{" "}
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
@@ -130,7 +55,8 @@ function Projects() {
             </span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            A showcase of my recent projects — from web applications to AI-powered solutions
+            A showcase of my recent projects — from web applications to
+            AI-powered solutions
           </p>
         </div>
 
@@ -179,8 +105,10 @@ function Projects() {
                     </span>
                   ))}
                   {project.tags.length > 4 && (
-                    <span className="px-2.5 py-0.5 text-[10px] font-medium rounded-full 
-                      bg-gray-800 text-gray-400 border border-gray-700">
+                    <span
+                      className="px-2.5 py-0.5 text-[10px] font-medium rounded-full 
+                      bg-gray-800 text-gray-400 border border-gray-700"
+                    >
                       +{project.tags.length - 4}
                     </span>
                   )}

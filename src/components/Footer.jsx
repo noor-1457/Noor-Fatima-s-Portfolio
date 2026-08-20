@@ -72,7 +72,7 @@ function Footer() {
           <div data-aos="fade-up" data-aos-delay="200">
             <h4 className="text-sm font-semibold text-white mb-4">Tech Stack</h4>
             <div className="flex flex-wrap gap-2">
-              {["React", "Node.js", "Express", "MongoDB", "Tailwind", "TypeScript", "Next.js", "Docker"].map((tech, idx) => (
+              {["React", "Node.js", "Express", "MongoDB", "Tailwind", "TypeScript"].map((tech, idx) => (
                 <span
                   key={idx}
                   className="px-3 py-1 text-xs rounded-full bg-gray-800/50 text-gray-400 border border-gray-700 hover:border-blue-500/50 hover:text-white transition-all duration-300"
@@ -135,12 +135,6 @@ function Footer() {
             <span className="text-gray-300 hover:text-blue-400 transition-colors">
               Noor Fatima
             </span>
-          </div>
-
-          {/* Status */}
-          <div className="flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
-            <span className="text-xs text-gray-500">All systems operational</span>
           </div>
         </div>
       </div>

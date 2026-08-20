@@ -4,10 +4,26 @@ import { Users, Zap, Globe, Code, ArrowRight, CheckCircle } from "lucide-react";
 
 const About = () => {
   const stats = [
-    { number: "50+", label: "Applications", icon: <Code className="w-5 h-5" /> },
-    { number: "35%", label: "Performance Improved", icon: <Zap className="w-5 h-5" /> },
-    { number: "US Teams", label: "Remote Collaboration", icon: <Users className="w-5 h-5" /> },
-    { number: "100k+", label: "API Users", icon: <Globe className="w-5 h-5" /> },
+    {
+      number: "50+",
+      label: "Applications",
+      icon: <Code className="w-5 h-5" />,
+    },
+    {
+      number: "35%",
+      label: "Performance Improved",
+      icon: <Zap className="w-5 h-5" />,
+    },
+    {
+      number: "US Teams",
+      label: "Remote Collaboration",
+      icon: <Users className="w-5 h-5" />,
+    },
+    {
+      number: "100k+",
+      label: "API Users",
+      icon: <Globe className="w-5 h-5" />,
+    },
   ];
 
   const highlights = [
@@ -22,12 +38,18 @@ const About = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16" data-aos="fade-up">
-          <span className="text-blue-400 font-mono text-sm tracking-wider">ABOUT</span>
+          <span className="text-blue-400 font-mono text-sm tracking-wider">
+            ABOUT
+          </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">
-            Professional <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Highlights</span>
+            Professional{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+              Highlights
+            </span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Building scalable web applications with modern tech, clean architecture, and remote-first mindset
+            Building scalable web applications with modern tech, clean
+            architecture, and remote-first mindset
           </p>
         </div>
 
@@ -41,10 +63,12 @@ const About = () => {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold">Noor Fatima</h3>
-                  <p className="text-gray-400 text-sm">Full-Stack Web Developer</p>
+                  <p className="text-gray-400 text-sm">
+                    Full-Stack Web Developer
+                  </p>
                 </div>
               </div>
-              
+
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-sm text-gray-300">
                   <span className="text-blue-400">📍</span>
@@ -56,8 +80,11 @@ const About = () => {
                 </div>
                 <div className="flex items-center gap-3 text-sm text-gray-300">
                   <span className="text-blue-400">📧</span>
-                  <a href="mailto:noor.fatima@email.com" className="text-blue-400 hover:underline">
-                    noor.fatima@email.com
+                  <a
+                    href="mailto:noorzafar882@gmail.com"
+                    className="text-blue-400 hover:underline"
+                  >
+                    noorzafar882@gmail.com
                   </a>
                 </div>
               </div>
@@ -97,12 +124,13 @@ const About = () => {
             <div className="bg-[#121212] rounded-xl border border-gray-800 p-6">
               <h4 className="text-sm font-semibold text-white mb-3">Summary</h4>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Full-Stack Web Developer with <span className="text-blue-400 font-semibold">2+ years</span> of experience 
-                delivering high-performance web applications for startups and enterprise clients. 
-                Specialized in <span className="text-blue-400">JavaScript ecosystems</span>, scalable backend systems, 
-                and cloud deployment. Proven track record of collaborating with distributed 
-                teams across US time zones.
-              </p>
+  <span className="text-blue-400 font-semibold">Full-Stack Developer</span> passionate about
+  building modern, responsive, and user-friendly web applications.
+  Skilled in the <span className="text-blue-400">MERN Stack</span>, with hands-on experience
+  through internships, client projects, and personal applications using React, Node.js,
+  Express, and MongoDB. Currently expanding my skills in
+  <span className="text-blue-400"> AI and advanced web technologies</span>.
+</p>
             </div>
 
             {/* Highlights Grid */}

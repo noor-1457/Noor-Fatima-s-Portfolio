@@ -7,14 +7,33 @@ import heroImage from "../assets/hero.png";
 
 const Hero = () => {
   const socialLinks = [
-    { icon: <FaGithub className="w-5 h-5" />, url: "https://github.com/noor-1457", label: "GitHub" },
-    { icon: <FaLinkedin className="w-5 h-5" />, url: "https://www.linkedin.com/in/noor-fatima-zafar-63a609318/", label: "LinkedIn" },
-    { icon: <FaTwitter className="w-5 h-5" />, url: "https://twitter.com/", label: "Twitter" },
-    { icon: <FaEnvelope className="w-5 h-5" />, url: "mailto:noor@email.com", label: "Email" },
+    {
+      icon: <FaGithub className="w-5 h-5" />,
+      url: "https://github.com/noor-1457",
+      label: "GitHub",
+    },
+    {
+      icon: <FaLinkedin className="w-5 h-5" />,
+      url: "https://www.linkedin.com/in/noor-fatima-zafar-63a609318/",
+      label: "LinkedIn",
+    },
+    {
+      icon: <FaTwitter className="w-5 h-5" />,
+      url: "https://twitter.com/",
+      label: "Twitter",
+    },
+    {
+      icon: <FaEnvelope className="w-5 h-5" />,
+      url: "mailto:noorzafar882@gmail.com",
+      label: "Email",
+    },
   ];
 
   return (
-    <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-[#0a0a0a]">
+    <section
+      id="home"
+      className="min-h-screen flex items-center relative overflow-hidden bg-[#0a0a0a]"
+    >
       {/* Background Gradient */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-500/5 to-transparent pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-gradient-to-tr from-blue-600/5 to-transparent pointer-events-none"></div>
@@ -48,8 +67,9 @@ const Hero = () => {
 
             {/* Description */}
             <p className="text-gray-400 text-base max-w-lg leading-relaxed">
-              Building scalable web applications with modern tech, clean architecture, 
-              and a passion for creating exceptional digital experiences.
+              Building scalable web applications with modern tech, clean
+              architecture, and a passion for creating exceptional digital
+              experiences.
             </p>
 
             {/* Location & Info */}
@@ -71,7 +91,7 @@ const Hero = () => {
                 href="#contact"
                 className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
               >
-                Hire Me
+                Download Resume
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
@@ -100,11 +120,14 @@ const Hero = () => {
           </div>
 
           {/* Right Content - Image */}
-          <div className="flex justify-center lg:justify-end" data-aos="fade-left">
+          <div
+            className="flex justify-center lg:justify-end"
+            data-aos="fade-left"
+          >
             <div className="relative">
               {/* Glow Effect */}
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl"></div>
-              
+
               {/* Image Container */}
               <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-2 border-blue-500/20 bg-gradient-to-b from-blue-500/5 to-transparent">
                 <img
@@ -118,8 +141,18 @@ const Hero = () => {
               <div className="absolute -bottom-4 -right-4 bg-[#1a1a1a] border border-gray-800 rounded-xl p-4 shadow-xl">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      />
                     </svg>
                   </div>
                   <div>

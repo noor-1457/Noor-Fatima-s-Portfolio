@@ -55,48 +55,6 @@ const Services = () => {
       badge: "Design",
       color: "from-purple-500 to-pink-400",
     },
-    {
-      id: 4,
-      title: "AI Integration",
-      description: "Intelligent AI solutions for your business. Chatbots, automation, and data analysis to streamline operations.",
-      icon: <Zap className="w-6 h-6" />,
-      features: [
-        "AI Chatbot Development",
-        "Workflow Automation",
-        "Data Analysis & Insights",
-        "Custom AI Solutions"
-      ],
-      badge: "AI/ML",
-      color: "from-orange-500 to-amber-400",
-    },
-    {
-      id: 5,
-      title: "Cloud Solutions",
-      description: "Cloud infrastructure and deployment services. AWS, Vercel, Netlify, and Docker containerization.",
-      icon: <Cloud className="w-6 h-6" />,
-      features: [
-        "Cloud Architecture Design",
-        "DevOps & CI/CD Pipeline",
-        "Docker Containerization",
-        "Performance Optimization"
-      ],
-      badge: "DevOps",
-      color: "from-cyan-500 to-blue-400",
-    },
-    {
-      id: 6,
-      title: "Consultation",
-      description: "Expert guidance for your tech projects. Architecture review, code optimization, and strategic planning.",
-      icon: <Users className="w-6 h-6" />,
-      features: [
-        "Project Architecture Review",
-        "Code Quality Audit",
-        "Technology Selection",
-        "Growth Strategy Planning"
-      ],
-      badge: "Consulting",
-      color: "from-indigo-500 to-purple-400",
-    },
   ];
 
   return (
@@ -159,14 +117,14 @@ const Services = () => {
               </div>
 
               {/* CTA */}
-              <button className="w-full py-2.5 rounded-lg border border-gray-700 
+              {/* <button className="w-full py-2.5 rounded-lg border border-gray-700 
                 text-gray-300 font-medium text-sm
                 group-hover:border-blue-500 group-hover:bg-blue-500/10 
                 group-hover:text-white transition-all duration-300
                 flex items-center justify-center gap-2">
                 Learn More
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </button> */}
             </div>
           ))}
         </div>

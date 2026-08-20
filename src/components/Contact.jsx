@@ -1,6 +1,14 @@
 // Contact.jsx
 import { useState } from "react";
-import { Mail, Phone, MapPin, Send, Loader2, CheckCircle, ArrowRight } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  Loader2,
+  CheckCircle,
+  ArrowRight,
+} from "lucide-react";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -35,7 +43,7 @@ function Contact() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(formData),
-        }
+        },
       );
 
       const data = await response.json();
@@ -64,14 +72,8 @@ function Contact() {
     {
       icon: <Mail className="w-5 h-5" />,
       label: "Email",
-      value: "noor.fatima@email.com",
-      link: "mailto:noor.fatima@email.com",
-    },
-    {
-      icon: <Phone className="w-5 h-5" />,
-      label: "Phone",
-      value: "+92 300 1234567",
-      link: "tel:+923001234567",
+      value: "noorzafar882@gmail.com",
+      link: "mailto:noorzafar882@gmail.com",
     },
     {
       icon: <MapPin className="w-5 h-5" />,
@@ -86,7 +88,9 @@ function Contact() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16" data-aos="fade-up">
-          <span className="text-blue-400 font-mono text-sm tracking-wider">CONTACT</span>
+          <span className="text-blue-400 font-mono text-sm tracking-wider">
+            CONTACT
+          </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">
             Let's{" "}
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
@@ -173,6 +177,8 @@ function Contact() {
             </div>
           </div>
 
+          {/* =============SAVEFORM.IO ===============*/}
+
           {/* Contact Form */}
           <div className="lg:col-span-2" data-aos="fade-left">
             <form
@@ -249,14 +255,18 @@ function Contact() {
               {status === "success" && (
                 <div className="flex items-center gap-2 mb-4 p-3 rounded-lg bg-green-500/10 border border-green-500/30 text-green-400">
                   <CheckCircle className="w-4 h-4" />
-                  <span className="text-sm">Message sent successfully! I'll get back to you soon. ✨</span>
+                  <span className="text-sm">
+                    Message sent successfully! I'll get back to you soon. ✨
+                  </span>
                 </div>
               )}
 
               {status === "error" && (
                 <div className="flex items-center gap-2 mb-4 p-3 rounded-lg bg-red-500/10 border border-red-500/30 text-red-400">
                   <span>⚠️</span>
-                  <span className="text-sm">Something went wrong. Please try again.</span>
+                  <span className="text-sm">
+                    Something went wrong. Please try again.
+                  </span>
                 </div>
               )}
 

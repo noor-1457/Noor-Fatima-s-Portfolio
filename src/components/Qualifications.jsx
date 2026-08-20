@@ -362,52 +362,6 @@ const Qualifications = () => {
             </div>
           )}
         </div>
-
-        {/* Skills Overview */}
-        <div
-          className="p-6 rounded-xl bg-[#121212] border border-gray-800"
-          data-aos="fade-up"
-        >
-          <div className="flex items-center gap-3 mb-4">
-            <span className="text-blue-400 text-sm">⚡</span>
-            <span className="text-sm font-medium text-white">
-              Skills Overview
-            </span>
-            <div className="flex-1 h-px bg-gradient-to-r from-gray-800 to-transparent"></div>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-            {[
-              { name: "MERN Stack", level: 85 },
-              { name: "AI/ML Basics", level: 60 },
-              { name: "Digital Marketing", level: 75 },
-              { name: "Graphic Design", level: 70 },
-            ].map((skill, index) => (
-              <div key={index} className="text-center">
-                <div className="flex justify-between text-sm mb-1">
-                  <span className="text-gray-400">{skill.name}</span>
-                  <span className="text-blue-400 font-medium">
-                    {skill.level}%
-                  </span>
-                </div>
-                <div className="w-full h-1.5 rounded-full bg-gray-800 overflow-hidden">
-                  <div
-                    className="h-full rounded-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-1000"
-                    style={{ width: `${skill.level}%` }}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-4 pt-4 border-t border-gray-800 flex justify-between items-center text-xs text-gray-500">
-            <span className="flex items-center gap-1">
-              <CheckCircle className="w-3 h-3 text-emerald-400" />
-              All qualifications verified
-            </span>
-            <span>{education.length + allCertificates.length} credentials</span>
-          </div>
-        </div>
       </div>
       {selectedCertificate && (
         <div
