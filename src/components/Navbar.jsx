@@ -57,7 +57,7 @@ const Navbar = () => {
     <>
       {/* Navbar */}
       <nav
-        className={`fixed overflow-hidden top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed  top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
             ? "bg-[#0a0a0a]/95 backdrop-blur-lg border-b border-gray-800"
             : "bg-transparent"
@@ -115,7 +115,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div
           className={`md:hidden fixed inset-x-0 top-16 bg-[#0a0a0a]/95 backdrop-blur-lg border-b border-gray-800 
-            transition-all duration-300 ease-in-out overflow-hidden
+            transition-all duration-300 ease-in-out overflow-hidden z-[9999]
             ${isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"}`}
         >
           <div className="container mx-auto px-4 py-4 space-y-1">
