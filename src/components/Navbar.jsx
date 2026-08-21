@@ -65,14 +65,24 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <a
-              href="#home"
-              className="text-xl font-bold text-white hover:text-blue-400 transition-colors"
-              onClick={() => setActiveSection("home")}
-            >
-              Noor<span className="text-blue-400">.</span>
-            </a>
+           {/* Logo */}
+<a
+  href="#home"
+  className="group relative inline-block"
+  onClick={() => setActiveSection("home")}
+>
+  <span className="text-2xl font-black italic tracking-tight text-white group-hover:text-blue-400 transition-colors duration-300">
+    Noor
+  </span>
+
+  <span className="text-2xl font-black italic text-blue-400">
+    .
+  </span>
+
+  {/* Underline */}
+  <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-gradient-to-r from-blue-400 to-purple-400 rounded-full transform origin-left scale-x-75 group-hover:scale-x-100 transition-transform duration-300"></span>
+
+</a>
 
             {/* Desktop Nav */}
             <div className="hidden md:flex items-center gap-1">

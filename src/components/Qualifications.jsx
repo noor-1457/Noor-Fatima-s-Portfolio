@@ -26,6 +26,7 @@ import reactBasicCert from "../assets/certificates/react-basics.png";
 import reactAdvancedCert from "../assets/certificates/react-advanced.png";
 import gitCert from "../assets/certificates/git.png";
 import backendCert from "../assets/certificates/backend.png";
+import backendBadge from "../assets/certificates/backendBadge.jpeg";
 
 const Qualifications = () => {
   const [selectedCertificate, setSelectedCertificate] = useState(null);
@@ -81,44 +82,46 @@ const Qualifications = () => {
       image: InternCert,
     },
     {
-      id: 2,
-      name: "Meta HTML and CSS in depth",
+      id: 8,
+      name: "Developing Backend Apps with Node.js and Expressjs",
       issuer: "Coursera",
-      year: "2024",
-      skills: ["HTML5", "CSS3", "Responsive Design", "UI/UX Basics"],
-      icon: <Code className="w-5 h-5" />,
-      color: "border-blue-500/30",
-      image: htmlCssCert,
+      year: "2026",
+      skills: [
+        "Node.js",
+        "Express.js",
+        "REST APIs",
+        "Middleware",
+        "Authentication",
+      ],
+      icon: <Server className="w-5 h-5" />,
+      color: "border-teal-500/30",
+      image: backendCert,
     },
     {
-      id: 3,
-      name: "Meta Front-End Developer",
-      issuer: "Coursera",
-      year: "2024",
-      skills: ["React", "JavaScript", "HTML", "CSS", "UX/UI"],
-      icon: <Layout className="w-5 h-5" />,
-      color: "border-emerald-500/30",
-      image: frontendCert,
+      id: 8,
+      name: "Node.js and Expressjs",
+      issuer: "IBM - Coursera",
+      year: "2026",
+      skills: [
+        "Node.js",
+        "Express.js",
+        "REST APIs",
+        "Middleware",
+        "Authentication",
+      ],
+      icon: <Server className="w-5 h-5" />,
+      color: "border-teal-500/30",
+      image: backendBadge,
     },
     {
-      id: 4,
-      name: "Meta Programming with JavaScript",
+      id: 7,
+      name: "Meta Version Control with Git",
       issuer: "Coursera",
       year: "2024",
-      skills: ["JavaScript", "ES6+", "DOM Manipulation", "Async/Await", "APIs"],
-      icon: <Code className="w-5 h-5" />,
-      color: "border-purple-500/30",
-      image: jsCert,
-    },
-    {
-      id: 5,
-      name: "Meta React Basics",
-      issuer: "Coursera",
-      year: "2024",
-      skills: ["React", "Components", "State", "Props", "Hooks"],
-      icon: <Code className="w-5 h-5" />,
-      color: "border-orange-500/30",
-      image: reactBasicCert,
+      skills: ["Git", "GitHub", "Branching", "Merging", "Collaboration"],
+      icon: <GitBranch className="w-5 h-5" />,
+      color: "border-amber-500/30",
+      image: gitCert,
     },
     {
       id: 6,
@@ -137,30 +140,44 @@ const Qualifications = () => {
       image: reactAdvancedCert,
     },
     {
-      id: 7,
-      name: "Meta Version Control with Git",
+      id: 5,
+      name: "Meta React Basics",
       issuer: "Coursera",
       year: "2024",
-      skills: ["Git", "GitHub", "Branching", "Merging", "Collaboration"],
-      icon: <GitBranch className="w-5 h-5" />,
-      color: "border-amber-500/30",
-      image: gitCert,
+      skills: ["React", "Components", "State", "Props", "Hooks"],
+      icon: <Code className="w-5 h-5" />,
+      color: "border-orange-500/30",
+      image: reactBasicCert,
     },
     {
-      id: 8,
-      name: "Developing Backend Apps with Node.js and Expressjs",
+      id: 4,
+      name: "Meta Programming with JavaScript",
       issuer: "Coursera",
-      year: "2026",
-      skills: [
-        "Node.js",
-        "Express.js",
-        "REST APIs",
-        "Middleware",
-        "Authentication",
-      ],
-      icon: <Server className="w-5 h-5" />,
-      color: "border-teal-500/30",
-      image: backendCert,
+      year: "2024",
+      skills: ["JavaScript", "ES6+", "DOM Manipulation", "Async/Await", "APIs"],
+      icon: <Code className="w-5 h-5" />,
+      color: "border-purple-500/30",
+      image: jsCert,
+    },
+    {
+      id: 3,
+      name: "Meta Front-End Developer",
+      issuer: "Coursera",
+      year: "2024",
+      skills: ["React", "JavaScript", "HTML", "CSS", "UX/UI"],
+      icon: <Layout className="w-5 h-5" />,
+      color: "border-emerald-500/30",
+      image: frontendCert,
+    },
+    {
+      id: 2,
+      name: "Meta HTML and CSS in depth",
+      issuer: "Coursera",
+      year: "2024",
+      skills: ["HTML5", "CSS3", "Responsive Design", "UI/UX Basics"],
+      icon: <Code className="w-5 h-5" />,
+      color: "border-blue-500/30",
+      image: htmlCssCert,
     },
   ];
 
@@ -170,7 +187,10 @@ const Qualifications = () => {
     : allCertificates.slice(0, 4);
 
   return (
-    <section id="qualifications" className="overflow-y-hidden py-20 bg-[#0a0a0a]">
+    <section
+      id="qualifications"
+      className="overflow-y-hidden py-20 bg-[#0a0a0a]"
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16" data-aos="fade-up">

@@ -45,8 +45,10 @@ html {
   background-color: #ea580c; /* orange-600 */
 }
 
+/* gradient-to-r from-blue-400 to-purple-400 */
+
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #f97316 #1f2937;
+  scrollbar-color: #c27aff #1f2937;
 }
