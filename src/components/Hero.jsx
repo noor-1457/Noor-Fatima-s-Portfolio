@@ -35,9 +35,10 @@ const Hero = () => {
       className="min-h-screen flex items-center relative overflow-hidden bg-[#0a0a0a]"
     >
       {/* Background Gradient */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-blue-500/5 to-transparent pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-gradient-to-tr from-blue-600/5 to-transparent pointer-events-none"></div>
+      {/* Background Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-purple-500/10 pointer-events-none"></div>
 
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(59,130,246,0.08),transparent_40%),radial-gradient(circle_at_80%_50%,rgba(168,85,247,0.08),transparent_40%)] pointer-events-none"></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -88,17 +89,12 @@ const Hero = () => {
             {/* Buttons */}
             <div className="flex flex-wrap gap-4 pt-2">
               <a
-                href="#contact"
+                href="https://drive.google.com/uc?export=download&id=13ijMKGfG-jEoXCGk4m1uT8ULa8zEhXya"
+                download="Noor-Fatima-Resume.pdf"
                 className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/25"
               >
                 Download Resume
                 <ArrowRight className="w-4 h-4" />
-              </a>
-              <a
-                href="#projects"
-                className="inline-flex items-center gap-2 px-8 py-3 rounded-full border border-gray-700 hover:border-blue-500 text-gray-300 hover:text-white font-medium transition-all duration-300 hover:bg-blue-500/10"
-              >
-                View Projects
               </a>
             </div>
 
