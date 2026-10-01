@@ -28,6 +28,12 @@ const Skills = () => {
       category: "Frontend",
     },
     {
+      name: "Next.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      level: 90,
+      category: "Frontend",
+    },
+    {
       name: "TypeScript",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
       level: 70,
