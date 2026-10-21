@@ -103,6 +103,11 @@ category: "E-commerce",
     Database: { icon: <Database className="w-4 h-4" />, color: "purple" },
     DevOps: { icon: <GitBranch className="w-4 h-4" />, color: "orange" },
     Design: { icon: <Palette className="w-4 h-4" />, color: "pink" },
+    "E-commerce": {
+icon: <Globe className="w-4 h-4" />,
+color: "green"
+},
+
   };
 
   const groupedSkills = skills.reduce((acc, skill) => {
