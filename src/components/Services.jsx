@@ -55,6 +55,21 @@ const Services = () => {
       badge: "Design",
       color: "from-purple-500 to-pink-400",
     },
+    {
+id: 4,
+title: "Shopify Development",
+description: "Professional Shopify stores designed to help businesses sell online. From custom storefronts to store customization and optimization.",
+icon: <Code className="w-6 h-6" />,
+features: [
+"Shopify Store Setup",
+"Theme Customization",
+"Product & Collection Setup",
+"Store Optimization"
+],
+badge: "E-commerce",
+color: "from-green-500 to-emerald-400",
+},
+
   ];
 
   return (
