@@ -57,6 +57,13 @@ const Skills = () => {
       level: 90,
       category: "Frontend",
     },
+    {
+name: "Shopify",
+icon: "https://cdn.simpleicons.org/shopify/96BF48",
+level: 80,
+category: "E-commerce",
+},
+
 
     // BACKEND SKILLS
     {
