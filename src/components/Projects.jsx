@@ -5,7 +5,7 @@ import chiccloset from "../assets/chiccloset.png";
 import skyRoutes from "../assets/skyRoutes.png";
 import { FaGithub } from "react-icons/fa";
 import { ArrowRight, ExternalLink } from "lucide-react";
-import albarak from "../assets/Screenshot 2026-10-22 215228";
+import albarak from "../assets/albarak.png";
 function Projects() {
   const projects = [
     {
