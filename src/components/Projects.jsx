@@ -5,7 +5,7 @@ import chiccloset from "../assets/chiccloset.png";
 import skyRoutes from "../assets/skyRoutes.png";
 import { FaGithub } from "react-icons/fa";
 import { ArrowRight, ExternalLink } from "lucide-react";
-
+import albarak from "../assets/Screenshot 2026-10-22 215228";
 function Projects() {
   const projects = [
     {
@@ -38,6 +38,16 @@ function Projects() {
       github: "https://github.com/noor-1457/Neurocelix-AI",
       demo: "https://neurocelix-ai.vercel.app/",
     },
+    {
+  id: 4,
+  title: "Albarak",
+  description:
+    "Premium e-commerce store featuring luxury watches for men and women with an elegant shopping experience.",
+  image: albarak,
+  tags: ["Shopify", "E-commerce", "Luxury Watches", "Responsive Design"],
+  github: "",
+  demo: "https://albarakmobile.ae/",
+},
   ];
 
   return (
