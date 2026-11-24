@@ -48,6 +48,16 @@ function Projects() {
   github: "",
   demo: "https://albarakmobile.ae/",
 },
+    {
+  id: 5,
+  title: "AlHadiMobile",
+  description:
+    "Premium e-commerce store featuring mobile parts retail and wholesale with an elegant shopping experience.",
+  image: albarak,
+  tags: ["Shopify", "E-commerce", "Mobile parts", "Responsive Design"],
+  github: "",
+  demo: "https://alhadimobile.com/",
+},
   ];
 
   return (
