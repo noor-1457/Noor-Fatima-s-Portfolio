@@ -6,6 +6,7 @@ import skyRoutes from "../assets/skyRoutes.png";
 import { FaGithub } from "react-icons/fa";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import albarak from "../assets/albarak.png";
+import alhadi from "../assets/alhadi.png";
 function Projects() {
   const projects = [
     {
@@ -53,7 +54,7 @@ function Projects() {
   title: "AlHadiMobile",
   description:
     "Premium e-commerce store featuring mobile parts retail and wholesale with an elegant shopping experience.",
-  image: albarak,
+  image: alhadi,
   tags: ["Shopify", "E-commerce", "Mobile parts", "Responsive Design"],
   github: "",
   demo: "https://alhadimobile.com/",
